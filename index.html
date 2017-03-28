@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Студия</title>
+<link rel= "stylesheet" href = "css/style.css" type = "text/css">
+	<!---  HTML5 для старых браузеров IE -->
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/click-carousel.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#container").clickCarousel({margin: 10});	
+});
+</script>
+<script>
+$(document).ready(function() {
+    $("a.topLink").click(function() {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 500
+        });
+        return false;
+    });
+});
+</script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+</head>
+<body id = "page">
+  <section id = "header">
+     <div class = "layout">
+     	<a href ="" title=""><img src = "images/Logo.png" height="46" width="127" alt = ""/></a>
+        <menu>
+        	<li><a class="topLink" href = "#">Начало</a></li>
+        	<li><a class="topLink" href = "#services">Услуги</a></li>
+        	<li><a class="topLink" href = "#portfolio">Портфолио</a></li>
+        	<li><a class="topLink" href = "#about">О нас</a></li>
+        	<li><a class="topLink" href = "#contact">Контакты</a></li>
+        </menu>
+        <div class = "clr"></div>
+        <span>Добро пожаловать <br>в нашу студию!</span>
+        <h1>МЫ РАДЫ ВАМ</h1>
+        <a class="button" class="topLink" href = "#services">Узнать больше</a>
+      </div>
+	</section>
+
+	<section id="services">
+	     <div class = "layout">
+	     	<h2>Услуги</h2>
+	     	<span class="headline">Чем мы можем вам помочь</span>
+	     	<div class = "box3">
+	     	<img src= "images/basket.png"/>
+	     	<h4>E-commerce</h4>
+	     	<p>Большой опыт работы в E-commerce позволяет нам создавать реально эффективные продающие сайты</p>
+	     	</div>
+
+	     	<div class = "box3">
+	     	<img src = "images/laptop.png"/>
+	     	<h4>Responsive Web</h4>
+	     	<p>Всегда применяем только адаптивные технологии с использованием HTML5 и CSS3</p>
+	     	</div>
+
+	     	<div class = "box3">
+	     	<img src = "images/lock.png"/>
+	     	<h4>Web Security</h4>
+	     	<p>Являемся разработчиками ПО для усиления безопасности веб-сайтов, защитили более 1400 проектов</p>
+	     	</div>
+     </div>
+	</section>
+
+	<section id = "portfolio">
+		<div class = "layout">
+		<h2>Наше портфолио</h2>
+		<span class="headline">Что мы сделали для наших любимых клиентов</span>
+		<div class="box3">
+			<a href = "ya.ru">
+				<img src = "images/001.jpg"/>
+				<div>
+					<span>Посмотреть</span>
+				</div>
+			</a>
+			<h4>Ebony & Ivory</h4>
+			<p>Брендинг</p>
+		</div>
+		<div class="box3">
+		<a href = "ya.ru">
+			<img src = "images/002.jpg"/>
+			<div>
+				<span>Посмотреть</span>
+			</div>
+		</a>
+			<h4>Smart Stationary</h4>
+			<p>Полиграфия</p>
+		</div>
+		<div class="box3 last">
+		<a href = "ya.ru">
+			<img src = "images/003.jpg"/>
+			<div>
+				<span>Посмотреть</span>
+			</div>
+		</a>
+			<h4>Clever Poster</h4>
+			<p>Полиграфия</p>
+		</div>
+		<div class="box3">
+			<img src = "images/004.jpg"/>
+			<h4>Vinyl Record</h4>
+			<p>Обложка продукта</p>
+		</div>
+		<div class="box3">
+			<img src = "images/005.jpg"/>
+			<h4>Threehouse Template</h4>
+			<p>Веб дизайн</p>
+		</div>
+		<div class="box3 last">
+			<img src = "images/006.jpg"/>
+			<h4>Burned Logo</h4>
+			<p>Брендинг</p>
+		</div>
+     </div>
+	</section>
+
+	<section id = "about">
+	     <div class = "layout">
+	     	<h2>О нас</h2>
+	     	<span class="headline">Кто мы такие</span>
+	     	<div class="border">
+	     	<div class = "level">
+	     	<img src = "images/about-01.jpg"/>
+	     	<h4>ИЮЛЬ 2010</h4>
+	     	<h5>Наши скромные начинания</h5>
+	     	<p>Все начиналось с небольшого офиса и двух человек в нем.
+	     	С двух ноутбуков, большого энтузиазма и желания изменить мир.</p>
+	     	</div>
+
+	     	<div class = "level">
+	     	<img src = "images/about-02.jpg"/>
+	     	<h4>ЯНВАРЬ 2011</h4>
+	     	<h5>Первая премия за дизайн</h5>
+	     	<p>В январе 2011 мы получили первую премию в номинации "Лучший дизайн".
+	     	по оценке Российского интернет форума. Мы радовались этому как дети, это действительно очнень приятно!</p>
+	     	</div>
+
+	     	<div class = "level">
+	     	<img src = "images/about-03.jpg"/>
+	     	<h4>ДЕКАБРЬ 2012</h4>
+	     	<h5>Первые неудачи</h5>
+	     	<p>Все начиналось с небольшого офиса и двух человек в нем.
+	     	С двух ноутбуков, большого энтузиазма и желания изменить мир.</p>
+	     	</div>
+
+	     	<div class = "level">
+	     	<img src = "images/about-04.jpg"/>
+	     	<h4>ФЕВРАЛЬ 2014</h4>
+	     	<h5>Наш триумф</h5>
+	     	<p>Все начиналось с небольшого офиса и двух человек в нем.
+	     	С двух ноутбуков, большого энтузиазма и желания изменить мир.</p>
+	     	</div>
+
+	     	<div class = "level">
+	     		<a href="#"><img src = "images/about-05.jpg"/></a>
+	     	</div>
+     </div>
+   </div>
+	</section>
+
+	<section id= "team">
+	     <div class = "layout">
+	     	<h2>Наша команда</h2>
+	     	<span class="headline">Наши ведущие специалисты</span>
+	     	<div class = "box3">
+	     		<img src = "images/anast.jpg"/>
+	     		<h4>Анастасия</h4>
+	     		<p>Маркетолог</p>
+	     		<div class = "social">
+	     			<a class = "tw" href = "#"></a>
+	     			<a class = "fb" href = "#"></a>
+	     			<a class = "pint" href = "#"></a>
+	     		</div>
+	     	</div>
+	     	<div class = "box3">
+	     		<img src = "images/mark.jpg"/>
+	     		<h4>Максим</h4>
+	     		<p>Программист</p>
+	     		<div class = "social">
+	     			<a class = "tw" href = "#"></a>
+	     			<a class = "fb" href = "#"></a>
+	     			<a class = "google" href = "#"></a>
+	     		</div>
+	     	</div>
+	     	<div class = "box3">
+	     		<img src = "images/designer.jpg"/>
+	     		<h4>Виталий</h4>
+	     		<p>Дизайнер</p>
+	     		<div class = "social">
+	     			<a class = "fb" href = "#"></a>
+	     			<a class = "pint" href = "#"></a>
+	     		</div>
+	     	</div>
+	     	<div class = "clr"></div>
+	     	<p class = "resume">Мы все любим свою работу и делаем её только на отлично.<br> Иначе нас бы не было.</p>
+     </div>
+	</section>
+
+	<section id = "partner">
+	     <div class = "layout">
+	     	<div id = "slider">
+	     		<div id = "container">
+	     		<img src="partner/p01.jpg" alt = ""/>
+	     		<img src="partner/p02.jpg" alt = ""/>
+	     		<img src="partner/p03.jpg" alt = ""/>
+	     		<img src="partner/p04.jpg" alt = ""/>
+	     		<img src="partner/p05.jpg" alt = ""/>
+	     		<img src="partner/p06.jpg" alt = ""/>
+	     		<img src="partner/p07.jpg" alt = ""/>
+	     		</div>
+	     			<img id="carouselLeft" src="partner/leftArr.jpg" alt="Left Arrow" />
+	          <img id="carouselRight" src="partner/rightArr.jpg" alt="Right Arrow" />
+	     	</div>
+     </div>
+	</section>
+
+	<section id = "map">
+	     <div class = "layout">
+	     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NZSV_ADII3AUGugcYiGXIq_BbyHFi7u_&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+     </div>
+	</section>
+
+	<section id = "contact">
+	     <div class = "layout">
+	     	<h2>Напишите нам</h2>
+	     	<span class = "headline">Напишите, мы будем очень рады пообщаться с вами</span>
+	     	<form class="rf">
+	     	<div class = "box2">
+	     	<ul>
+	     		<li><input type = "text" name = "name" placeholder = "Ваше имя*" class = "req"/></li>
+	     		<li><input type = "email" name = "email" placeholder = "email*" class = "req"/></li>
+	     		<li><input type = "tel" name = "phone" placeholder = "Ваш телефон"/></li>
+	     	</ul>
+	     	</div>
+	     	<div class = "box2">
+	     		<textarea name = "messagу*" placeholder = "Ваше сообщение" class = "req"></textarea>
+	     	</div>
+	     	<input type = "submit" class = "button disabled" value = "Отправить"/>
+	     	</form>
+
+     </div>
+	</section>
+
+  <footer>
+       <div class = "layout">
+       	<div class = "box3">
+       		<p class="footer">Copwright <?php echo date('Y')?> FreebiesXpress.com</p>
+       	</div>
+       	<div class = "box3">
+       	<div class="social">
+       		<a href = "#" class="tw"></a>
+       		<a href = "#" class="fb"></a>
+       		<a href = "#" class="pint"></a>
+       		<a href = "#" class="google"></a>
+       	</div>
+       	</div>
+       	<div class = "box3"></div>
+     </div>
+	</footer>
+	<!--<a class = "fixed topLink" href="#header">Наверх</a>-->
+	<div id="toTop" > ^ Наверх</div>
+	<script type="text/javascript" src="js/validate.js"></script>
+</body>
+</html>
