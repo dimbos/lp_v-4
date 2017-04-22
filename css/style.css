@@ -670,7 +670,9 @@ width:720px;
 }
 
 #header menu {
-width:70%;
+width:80%;
+margin-top: -5em;
+margin-right: -5%;
 }
 
 #header span {
